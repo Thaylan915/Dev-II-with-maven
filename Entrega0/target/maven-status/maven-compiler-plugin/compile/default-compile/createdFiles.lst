@@ -1,0 +1,8 @@
+AtorAlterarController.class
+util\PersistenceUtil.class
+util\TesteConexao.class
+model\application\ApCadastrarAtor.class
+AtorDeleteController.class
+controller\AtorCreateController.class
+controller\AtorListController.class
+model\domain\Ator.class
