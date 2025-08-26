@@ -1,4 +1,4 @@
-// package controller;
+package controller;
 
 import java.io.IOException;
 import jakarta.servlet.ServletException;
@@ -15,7 +15,7 @@ public class AtorDeleteController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // 1. Pega o ID do ator a ser excluído
-        Long id = Long.parseLong(request.getParameter("id"));
+        Long id = Long.valueOf(request.getParameter("id"));
         
         // 2. Chama a camada de aplicação para excluir o ator
         ApCadastrarAtor.excluirAtor(id);

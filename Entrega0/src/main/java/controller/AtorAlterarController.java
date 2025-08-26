@@ -1,4 +1,4 @@
-// package controller;
+package controller;
 
 import java.io.IOException;
 import jakarta.servlet.ServletException;
@@ -15,7 +15,7 @@ public class AtorAlterarController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // 1. Pega o ID e o novo nome do ator
-        Long id = Long.parseLong(request.getParameter("id"));
+        Long id = Long.valueOf(request.getParameter("id"));
         String novoNome = request.getParameter("nome");
         
         // 2. Chama a camada de aplicação para alterar o ator
